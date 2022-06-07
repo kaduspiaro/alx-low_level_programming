@@ -1,10 +1,11 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 /**
 
  * main - Entry point
 
- *
+ * Prints - Programming is like a multilingual puzzle
 
  * Return: Always 0 (Success)
 

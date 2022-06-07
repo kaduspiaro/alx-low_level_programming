@@ -1,15 +1,14 @@
 #include <stdio.h>
 
 /**
- * main - return the integal of the function
+ * main - Entry point
  *
- * Description:use to print 'Programming is like building a multilingual puzzle'
- *
- * Return: value of 0
-*/
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
-        puts("\"Programming is like building a multilingual puzzle");
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
+

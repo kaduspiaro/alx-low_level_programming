@@ -1,35 +1,20 @@
 #include <stdio.h>
-
-
-
 /**
-
- * main - Prints numbers from 0 to 9.
-
+ * main - print integer from 0 to 10
  *
-
- * Return: Always 0 (Success)
-
+ * Description: return the required result
+ *
+ * Return: return integer 0
+ *
  */
-
 int main(void)
-  
 {
-  
-  int i;
-  
+	int var;
 
-  
-  for (i = 0; i < 10; i++)
-    
-    {
-      
-      printf("%d", i);
-      
-    }
-  
-  putchar('\n');
-  
-  return (0);
-  
+	for (var = 0; var < 10; var++)
+	{
+		printf("%d", var);
+	}
+	putchar('\n');
+	return (0);
 }

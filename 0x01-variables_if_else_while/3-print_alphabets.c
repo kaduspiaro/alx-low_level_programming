@@ -1,37 +1,27 @@
 #include <stdio.h>
-
-
-
+#include <ctype.h>
 /**
-
- * main - Prints the alphabet.
-
+ * main - Print alphabet both in upper and lowercase
  *
-
- * Return: Always 0 (Success)
-
+ * Description: print a to z in upper and lower
+ *
+ * Return: return integer value 0
+ *
  */
-
 int main(void)
-  
 {
-  
-  char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  
-  int i;
-  
+	char alphabet;
 
-  
-  for (i = 0; i < 52; i++)
-    
-    {
-      
-      putchar(alp[i]);
-      
-    }
-  
-  putchar('\n');
-  
-  return (0);
-  
+	for (alphabet = 'A'; alphabet <= 'Z'; alphabet++)
+	{
+		putchar(tolower(alphabet));
+	}
+	for (alphabet = 'A'; alphabet <= 'Z'; alphabet++)
+	{
+		putchar(alphabet);
+	}
+
+	putchar('\n');
+	return (0);
+
 }

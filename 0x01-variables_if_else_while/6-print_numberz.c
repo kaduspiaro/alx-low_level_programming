@@ -1,35 +1,20 @@
 #include <stdio.h>
-
-
-
 /**
-
- * main - Prints numbers between 0 to 9.
-
+ *main - print digit from 1 to 10
  *
-
- * Return: Always 0 (Success)
-
+ * Description: return the results from a for loop
+ *
+ * Return: return integer value  0
+ *
  */
-
 int main(void)
-  
 {
-  
-  int i;
-  
+	int start = 0;
 
-  
-  for (i = 48; i < 58; i++)
-    
-    {
-      
-      putchar(i);
-      
-    }
-  
-  putchar('\n');
-  
-  return (0);
-  
+	for (start = 0; start < 10; start++)
+	{
+		putchar(start + '0');
+	}
+	putchar('\n');
+	return (0);
 }

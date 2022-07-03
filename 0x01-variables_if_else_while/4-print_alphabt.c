@@ -1,45 +1,24 @@
 #include <stdio.h>
-
-#include <stdlib.h>
-
-#include <string.h>
-
-
-
+#include <ctype.h>
 /**
-
- * main - Prints the alphabet without q and e.
-
+ * main - return alphabets expect e and q
  *
-
- * Return: Always 0 (Success)
-
+ * Description: print the required results
+ *
+ * Return: integer value 0
+ *
  */
-
 int main(void)
-  
 {
-  
-  int i;
-  
+	char letter;
 
-  
-  for (i = 97; i < 123; i++)
-    
-    {
-      
-      if (i != 101 && i != 113)
-	
+	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-	  
-	  putchar(i);
-	  
+		if (letter != 'e' && letter != 'q')
+		{
+			putchar(letter);
+		}
 	}
-      
-    }
-  
-  putchar('\n');
-  
-  return (0);
-  
+	putchar('\n');
+	return (0);
 }

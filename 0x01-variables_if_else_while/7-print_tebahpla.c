@@ -1,35 +1,20 @@
 #include <stdio.h>
-
-
-
 /**
-
- * main - Prints reversed alphabet.
-
+ * main - print out the result of the function
  *
-
- * Return: Always 0 (Success)
-
+ * Description: print out the alphabets in reverse
+ *
+ * Return: return integer value o
+ *
  */
-
 int main(void)
-  
 {
-  
-  int i;
-  
+	char abet;
 
-  
-  for (i = 122; i > 96; i--)
-    
-    {
-      
-      putchar(i);
-      
-    }
-  
-  putchar('\n');
-  
-  return (0);
-  
+	for (abet = 'z'; abet >= 'a'; abet--)
+	{
+		putchar(abet);
+	}
+	putchar('\n');
+	return (0);
 }
